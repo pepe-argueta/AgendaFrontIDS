@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="scss/login.css">
+    <link rel="import" href="components/status-login.html">
+</head>
+
+<body>
+    <div class="container">
+        <form autocomplete='off' class='form'>
+            <div class='control'>
+                <h1>
+                    Login Agenda
+                </h1>
+            </div>
+            <div class='control block-cube block-input'>
+                <input name='nombre_usuario' id="nombre_usuario" placeholder='Usuario' type='text'>
+                <div class='bg-top'>
+                    <div class='bg-inner'></div>
+                </div>
+                <div class='bg-right'>
+                    <div class='bg-inner'></div>
+                </div>
+                <div class='bg'>
+                    <div class='bg-inner'></div>
+                </div>
+            </div>
+            <div class='control block-cube block-input'>
+                <input name='password' id="password" placeholder='Password' type='password'>
+                <div class='bg-top'>
+                    <div class='bg-inner'></div>
+                </div>
+                <div class='bg-right'>
+                    <div class='bg-inner'></div>
+                </div>
+                <div class='bg'>
+                    <div class='bg-inner'></div>
+                </div>
+            </div>
+            <button type="submit"  onclick="event.preventDefault();MVC.controllerInst.login(event);" class='btn block-cube block-cube-hover' type='button'>
+                <div class='bg-top'>
+                    <div class='bg-inner'></div>
+                </div>
+                <div class='bg-right'>
+                    <div class='bg-inner'></div>
+                </div>
+                <div class='bg'>
+                    <div class='bg-inner'></div>
+                </div>
+                <div class='text'>
+                    Log In
+                </div>
+            </button>
+            </div>
+        </form>
+        <div id="status"></div>
+    </div>
+</body>
+
+<script>
+    const MVC = {};
+</script>
+<script src="./js/model.js"></script>
+<script src="./js/view.js"></script>
+<script src="./js/controller.js"></script>
+<script src="./main.js"></script>
+<script>
+</script>
+
+</html>

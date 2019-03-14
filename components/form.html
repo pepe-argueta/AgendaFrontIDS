@@ -1,0 +1,47 @@
+<script>
+   
+
+    class MyInputs extends HTMLElement {
+        constructor() {
+            super();
+        }
+
+        connectedCallback() {
+            this.innerHTML = `
+            <div class="row">
+              <div class="input-group">
+                <label for="nombre_contacto">Nombre</label>
+                <input type="text" id="nombre_contacto" name="nombre_contacto">
+              </div>
+
+              <div class="input-group">
+                <label for="telefono_personal">Telefono Personal</label>
+                <input type="tel" name="telefono_personal" id="telefono_personal">
+              </div>
+
+              <div class="input-group">
+                <label for="telefono_oficina">Telefono Oficina</label>
+                <input type="tel" name="telefono_oficina" id="telefono_oficina">
+              </div>
+
+              <div class="input-group">
+                <label for="correo_personal">Correo Personal</label>
+                <input type="email" name="correo_personal" id="correo_personal">
+              </div>
+
+              <div class="input-group">
+                <label for="correo_oficina">Correo Oficina</label>
+                <input type="email" name="correo_oficina" id="correo_oficina">
+              </div>
+
+              <div class="input-group">
+                <label for="fecha_nacimiento">Fecha Nacimiento</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+              </div>
+            </div>
+            `;
+        }
+    }
+
+    customElements.define('my-inputs', MyInputs);
+</script>

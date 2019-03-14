@@ -1,0 +1,98 @@
+@media only screen and (max-width: 600px) {
+  body nav .nav-theme {
+    background: #072046;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  body nav .nav-theme {
+    background: #072046;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  body nav .nav-theme {
+    background: #072046;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  body nav .nav-theme {
+    background: #072046;
+  }
+}
+@media only screen and (min-width: 1301px) {
+  body nav .nav-theme {
+    background: #072046;
+  }
+}
+body article table {
+  width: 100%;
+  border-collapse: collapse;
+}
+@media only screen and (max-width: 600px) {
+  body article table {
+    margin-bottom: 130px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  body article table {
+    margin-bottom: 130px;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  body article table {
+    margin-bottom: 130px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  body article table {
+    margin-bottom: 130px;
+  }
+}
+@media only screen and (min-width: 1301px) {
+  body article table {
+    margin-bottom: 130px;
+  }
+}
+body article table tr:nth-of-type() {
+  background: #eee;
+}
+body article table th {
+  background: #072046;
+  color: white;
+  font-weight: bold;
+}
+body article table td,
+body article table th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+body footer {
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  body footer .footer-theme {
+    background: #072046;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  body footer .footer-theme {
+    background: #072046;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  body footer .footer-theme {
+    background: #072046;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+  body footer .footer-theme {
+    background: #072046;
+  }
+}
+@media only screen and (min-width: 1301px) {
+  body footer .footer-theme {
+    background: #072046;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

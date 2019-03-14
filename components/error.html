@@ -1,0 +1,22 @@
+<template id="my-paragraph">
+        <p>My paragraph</p>
+</template>
+<script>
+    class MyError extends HTMLElement {
+        constructor() {
+            super();
+        }
+
+        connectedCallback() {
+            this.innerHTML = `
+            <div class"section scrollspy">
+			    <h1>CONTACTO NO ENCONTRADO</h1>
+			    <h2>Unexpected Error <b>:(</b></h2>
+			</div>
+            `;
+
+        }
+    }
+
+    customElements.define('my-error', MyError);
+</script>

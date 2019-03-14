@@ -1,0 +1,18 @@
+<script>
+    class MyStatus extends HTMLElement {
+        constructor() {
+            super();
+        }
+
+        connectedCallback() {
+            this.innerHTML = `
+            <div class"section scrollspy">
+                Acceso correcto Redireccionando....
+			</div>
+            `;
+
+        }
+    }
+
+    customElements.define('my-status', MyStatus);
+</script>

@@ -1,0 +1,80 @@
+@import './variables.scss';
+
+body {
+    nav {
+        .nav-theme {
+            @media only screen and (max-width: $small) {
+                background: $color-small;
+            }
+            @media only screen and (min-width: $medium-min) and (max-width: $medium-max) {
+                background: $color-medium;
+            }
+            @media only screen and (min-width: $large-min) and (max-width: $large-max) {
+                background: $color-large;
+            }
+            @media only screen and (min-width: $extra-large-min) and (max-width: $extra-large-max){
+                background: $color-extra-large;
+            }
+            @media only screen and (min-width: $extra-extra-large-min){
+                background: $color-extra-extra-large;
+            }
+        }
+    }
+    article {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            @media only screen and (max-width: $small) {
+                margin-bottom: 130px;
+            }
+            @media only screen and (min-width: $medium-min) and (max-width: $medium-max) {
+                margin-bottom: 130px;
+            }
+            @media only screen and (min-width: $large-min) and (max-width: $large-max) {
+                margin-bottom: 130px;
+            }
+            @media only screen and (min-width: $extra-large-min) and (max-width: $extra-large-max){
+                margin-bottom: 130px;
+            }
+            @media only screen and (min-width: $extra-extra-large-min){
+                margin-bottom: 130px;
+            }
+            tr:nth-of-type() {
+                background: #eee;
+            }
+            
+            th {
+                background: #072046;
+                color: white;
+                font-weight: bold;
+            }
+            
+            td,
+            th {
+                padding: 6px;
+                border: 1px solid #ccc;
+                text-align: left;
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        .footer-theme {
+            @media only screen and (max-width: $small) {
+                background: $color-small;
+            }
+            @media only screen and (min-width: $medium-min) and (max-width: $medium-max) {
+                background: $color-medium;
+            }
+            @media only screen and (min-width: $large-min) and (max-width: $large-max) {
+                background: $color-large;
+            }
+            @media only screen and (min-width: $extra-large-min) and (max-width: $extra-large-max){
+                background: $color-extra-large;
+            }
+            @media only screen and (min-width: $extra-extra-large-min){
+                background: $color-extra-extra-large;
+            }
+        }
+    }
+}

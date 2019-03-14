@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lista de Contactos</title>
+    <link rel="import" href="components/form.html">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper nav-theme">
+            <a href="/" class="brand-logo">Agenda</a>
+            <div class="nav-content">
+                <a href="/" class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+                    <i class="large material-icons">arrow_back</i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h2>Nuevo Contacto</h2>
+        </header>
+        <article>
+            <form id="contact_form" name="contact_form" class="col s12">
+                <!-- Componente Inputs -->
+                <my-inputs></my-inputs>
+                <p>
+                    <button type="submit" onclick="event.preventDefault();MVC.controllerInst.saveData(event);" class="btn waves-effect waves-light">Guardar
+                        <i class="material-icons right"></i>
+                    </button>
+                </p>
+                </section>
+            </form>
+        </article>
+    </div>
+    <footer>
+        <div class="page-footer footer-theme">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2019 Copyright Jose Argueta
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    const MVC = {};
+</script>
+<script src="./js/model.js"></script>
+<script src="./js/view.js"></script>
+<script src="./js/controller.js"></script>
+<script src="./main.js"></script>
+
+</html>

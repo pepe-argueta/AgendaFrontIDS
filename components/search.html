@@ -1,0 +1,23 @@
+<script>
+    class MySearch extends HTMLElement {
+        constructor() {
+            super();
+        }
+
+        connectedCallback() {
+            this.innerHTML = `
+            <form id="contact_form" name="contact_form" class="col s12">
+                <div class="file-field input-field">
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" id="nombre_contacto" name="nombre_contacto">
+                    </div>
+                    <button type="submit"  onclick="event.preventDefault();MVC.controllerInst.searchContact(event);" class="btn waves-effect waves-light">Buscar</button>
+                    
+                </div>
+            </form>
+            `;
+        }
+    }
+
+    customElements.define('my-search', MySearch);
+</script>
